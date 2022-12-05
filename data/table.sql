@@ -1,6 +1,5 @@
-DROP TABLE IF EXISTS items;
-CREATE TABLE items (
-  id integer,
-  name varchar(255),
-  age integer
+drop table if exists items;
+create table items (
+  id integer primary key autoincrement not null,
+  name text not null
 );

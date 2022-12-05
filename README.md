@@ -12,6 +12,10 @@
 sudo apt install sqlite3 -y
 ```
 
+```bash
+sudo apt install libsqlite3-dev
+```
+
 ## Preparation
 
 データベースとテーブルの作成

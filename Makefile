@@ -11,10 +11,10 @@ CFLAGS    = -g -Wall
 INCLUDE  = -I./
 
 # ライブラリファイルのディレクトリ
-LIBDIR  = 
+LIBDIR  =
 
 # ライブラリファイル
-LIBS    = 
+LIBS    = -lsqlite3
 
 # ソースファイルのディレクトリ
 SRCDIR    = ./src
