@@ -1,1 +1,1 @@
-insert into items(id, name) values (null, 'うに');
+INSERT INTO items(id, name) VALUES (NULL, 'うに');
