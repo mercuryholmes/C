@@ -4,7 +4,7 @@
 #include "include/function.h"
 
 /* キーボード入力 */
-void select_key(option* option, int count){
+void select_key(option* options, int count){
   while(1) {
     char key[10];
     fgets(key, 10, stdin);
@@ -14,16 +14,16 @@ void select_key(option* option, int count){
     if (i > count) continue;
     // 選択した場合
     i--;
-    option[i].action(&option[i]);
+    options[i].action(&options[i]);
   }
 }
 
 /* メニューウィンドウの表示 */
-void _menue(option* option, int count){
+void __menue(option* options, int count){
 
   for (int i=0;i<count; i++) {
-    printf("%s\n", option[i].name);
+    printf("%s\n", options[i].name);
   }
 
-  select_key(option, count);
+  select_key(options, count);
 }

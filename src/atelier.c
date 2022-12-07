@@ -4,13 +4,13 @@
 #include "include/function.h"
 
 /* メニュー表示 */
-static void menue(){
-  option option[] = {
+static void menue() {
+  option options[] = {
     {"[1]採取", collecting},
     {"[2]調合", synthesis}
   };
-  int count = sizeof option / sizeof option[0];
-  _menue(option, count);
+  int count = sizeof options / sizeof options[0];
+  __menue(options, count);
 }
 
 /* アトリエ画面 */

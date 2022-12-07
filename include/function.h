@@ -5,7 +5,7 @@
 void select_key(option*, int);
 
 /* UI functions */
-void _menue(option*, int);
+void __menue(option*, int);
 void atelier(void);
 void synthesis(void);
 void collecting(void);
