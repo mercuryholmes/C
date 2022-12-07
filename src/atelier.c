@@ -6,7 +6,7 @@
 /* メニュー表示 */
 static void menue() {
   option options[] = {
-    {"[1]採取", collecting},
+    {"[1]採取", field},
     {"[2]調合", synthesis}
   };
   int count = sizeof options / sizeof options[0];

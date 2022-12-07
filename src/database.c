@@ -27,10 +27,12 @@ int get_item_at_random(void) {
         return 1;
     }
 
+    int item_id;
     int step = sqlite3_step(stmt);
     if (step == SQLITE_ROW) {
+        item_id = sqlite3_column_int(stmt, 0);
         printf("%s\n", sqlite3_column_text(stmt, 1));
-    } 
+    }
 
     sqlite3_finalize(stmt);
 
@@ -44,7 +46,7 @@ int get_item_at_random(void) {
         return 1;
     }
 
-    sqlite3_bind_int(stmt, 1, 1);
+    sqlite3_bind_int(stmt, 1, item_id);
 
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
