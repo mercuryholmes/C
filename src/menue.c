@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "include/struct.h"
 #include "include/function.h"
+#include "include/struct.h"
+
 
 /* キーボード入力 */
 void select_key(option* options, int count){

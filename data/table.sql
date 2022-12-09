@@ -4,8 +4,20 @@ CREATE TABLE items (
   name TEXT NOT NULL
 );
 
+DROP TABLE if EXISTS user_items;
+CREATE TABLE user_items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  item_id INTEGER NOT NULL,
+  quality, INTEGER,
+  FOREIGN KEY(item_id) REFERENCES items(id)
+);
+
 DROP TABLE if EXISTS basket;
 CREATE TABLE basket (
-  id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-  item_id INTEGER NOT NULL
+  user_item_id INTEGER NOT NULL
+);
+
+DROP TABLE if EXISTS container;
+CREATE TABLE container (
+  user_item_id INTEGER NOT NULL
 );

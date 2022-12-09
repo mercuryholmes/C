@@ -1,5 +1,5 @@
-#include "include/struct.h"
 #include "include/function.h"
+#include "include/struct.h"
 
 int main(void) {
   atelier();

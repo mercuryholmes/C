@@ -18,14 +18,27 @@ sudo apt install libsqlite3-dev
 
 ## Preparation
 
+* データ準備
+
 データベースとテーブルの作成
 
 ```bash
-cd ./data
-sqlite3 atelier.db < table.sql
+sqlite3 ./data/atelier.db < ./data/table.sql
 ```
 
 データの投入
 ```bash
-sqlite3 atelier.db < seed.sql
+sqlite3 ./data/atelier.db < ./data/seed.sql
+```
+
+* コンパイル
+
+```bash
+make
+```
+
+* 実行
+
+```bash
+./bin/atelier
 ```

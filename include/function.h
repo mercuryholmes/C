@@ -8,8 +8,11 @@ void select_key(option*, int);
 void __menue(option*, int);
 void atelier(void);
 void field(void);
-void collecting(void);
+void gather(void);
 void synthesis(void);
 
-/* database functions*/
+/* database */
 int get_item_at_random(void);
+
+/* libs */
+int generate_random(int, int);
